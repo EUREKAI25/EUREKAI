@@ -1,13 +1,31 @@
 # SYSTEM
 
-# QUESTION
+# [DIMENSION]DESCRIPTION
 ## IDENTITY
 ### DEFINITION
-Description : Élément qui sert à valider la nature ou les attributs d’un autre objet. Elle est toujours formulée de manière discriminante.
-Question : « Cette interrogation permet-elle de déterminer si l’objet correspond bien à son type et respecte son schéma fractal ? »
-Exemple : « Cet objet est-il défini par l’ensemble des 9 vecteurs ? » est une question d’objet.
-
+Description : Formulation textuelle ou vectorielle qui définit l’essence et les propriétés d’un objet à créer.
+Question : « Comment puis-je formuler l’identité et la finalité de cet objet pour le générer ou le reconnaitre correctement ? »
 ### RULE
+Exemple :  Un objet fractal est structuré par la matrice IVC × DRO 
+### OPTION
+## VIEW
+### DEFINITION
+### RULE
+### OPTION
+## CONTEXT
+### DEFINITION
+### RULE
+### OPTION
+------------------------------------------------------------------
+
+# [DIMENSION]QUESTION
+## IDENTITY
+### DEFINITION
+Description : Élément qui formule l’interrogation nécessaire pour guider la création ou la reconnaissance d’un objet.
+Question : Quelle interrogation dois-je poser pour générer ou identifier cet objet correctement ?
+### RULE
+Exemple : Quelle interrogation dois-je poser pour générer ou identifier cet objet correctement ?
+
 ### OPTION
 ## VIEW
 ### DEFINITION
@@ -20,14 +38,13 @@ Exemple : « Cet objet est-il défini par l’ensemble des 9 vecteurs ? » est u
 ------------------------------------------------------------------
 
 
-# EXAMPLE
+# [DIMENSION]EXAMPLE
 ## IDENTITY
 ### DEFINITION
-Description : Illustration concrète de l'objet ou du concept, destinée à en clarifier la compréhension.
-Question : « Cette instance illustre-t-elle correctement l’objet qu’elle prétend représenter ? »
-
+Description : Instance concrète qui illustre un objet ou une règle pour en faciliter la génération et l’usage.
+Question : « Quelle instance concrète puis-je fournir pour matérialiser cet objet ? »
 ### RULE
-Exemple : L’utilisateur “Alice” avec son profil affiché est un exemple d’objet fractal.
+Exemple : L’utilisateur  fictif “Alice” illustrant l’objet Utilisateur.
 ### OPTION
 ## VIEW
 ### DEFINITION
@@ -39,4 +56,5 @@ Exemple : L’utilisateur “Alice” avec son profil affiché est un exemple d�
 ### OPTION
 ------------------------------------------------------------------
 
+# SCOPE
 #
