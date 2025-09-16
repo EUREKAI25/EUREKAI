@@ -1,12 +1,9 @@
+# METAMETACLASS
+## OBJECTATTRIBUTESGENERATE
 
----
+## OBJECTMETHODGENERATE
+<objet><secondarymethod>
+ex client.list
 
-
----
-# ALERT
-
----
-# ALERT
-
----
-# ALERT
+## FRACTALDEPLOY
+## OPTIONLISTGENERATE  
