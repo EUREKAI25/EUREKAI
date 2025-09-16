@@ -12,7 +12,6 @@
 ### RULE
 ### OPTION
 ------------------------------------------------------------------
-bisou
 #
 
 # [OBJECT]FRACTAL 
@@ -145,7 +144,7 @@ bisou
 ### OPTION
 
 
-# [PLANESET]IVC
+# [PLANESET]IVCPLANESET
 ## IDENTITY
 ### DEFINITION
 ### RULE
@@ -161,7 +160,7 @@ bisou
 ### OPTION
 ------------------------------------------------------------------
 
-# [PLANESET]DRO
+# [PLANESET]DROPLANESET
 ## IDENTITY
 ### DEFINITION
 ### RULE
@@ -251,7 +250,7 @@ contient obligatoirement les objets de type  [DEFINITION] [RULE] [OPTION]
 ### OPTION
 ------------------------------------------------------------------
 
-# [DIMENSION]IDENTITY 
+# [DIMENSION]IDENTITYDIMENSION 
 ## IDENTITY
 ### DEFINITION
 Ce qui constitue l’identité d’un objet (ident, nom, clés primaires/secondaires, version, owner, scope) et la sémantique associée (unicité, stabilité, lisibilité).
@@ -270,7 +269,7 @@ template_path : - peut etre null [AUTOMATION][GENERATION]
 ## CONTEXT
 
 
-# [DIMENSION]VIEW 
+# [DIMENSION]VIEWDIMENSION 
 ## IDENTITY
 ### DEFINITION
 ### RULE
@@ -285,7 +284,7 @@ template_path : - peut etre null [AUTOMATION][GENERATION]
 ### OPTION
 
 
-# [DIMENSION]CONTEXT
+# [DIMENSION]CONTEXTDIMENSION
 ## IDENTITY
 ### DEFINITION
 ### RULE
@@ -299,7 +298,7 @@ template_path : - peut etre null [AUTOMATION][GENERATION]
 ### RULE
 ### OPTION
 
-# [DIMENSION]DEFINITION
+# [DIMENSION]DEFINITIONDIMENSION
 ## IDENTITY
 #### DEFINITION 
 
@@ -319,7 +318,7 @@ format lang : string
 ### OPTION
 
 
-# [DIMENSION]RULE 
+# [DIMENSION]RULEDIMENSION 
 ## IDENTITY
 ### DEFINITION
 
@@ -361,7 +360,7 @@ structure : structure, schema, example, format, conditional
 ##### OPTION
 
 
-# [DIMENSION]OPTION 
+# [DIMENSION]OPTIONDIMENSION 
 ## IDENTITY
 ### DEFINITION
 Ce qui constitue l’identité d’un objet (ident, nom, clés primaires/secondaires, version, owner, scope) et la sémantique associée (unicité, stabilité, lisibilité).
@@ -377,37 +376,37 @@ Ce qui constitue l’identité d’un objet (ident, nom, clés primaires/seconda
 ### OPTION
 
 
-# [PLANE]IDENTITYDEFINITION
+# [PLANE]IDENTITYDEFINITIONPLANE
 bundle des réponses selon external/internal
 
-# [PLANE]IDENTITYRULE
+# [PLANE]IDENTITYRULEPLANE
 bundle des réponses selon external/internal
 
-# [PLANE]IDENTITYOPTION
-bundle des réponses selon external/internal
-
-
-# [PLANE]VIEWDEFINITION
+# [PLANE]IDENTITYOPTIONPLANE
 bundle des réponses selon external/internal
 
 
-# [PLANE]VIEWRULE
+# [PLANE]VIEWDEFINITIONPLANE
 bundle des réponses selon external/internal
 
 
-# [PLANE]VIEWOPTION
+# [PLANE]VIEWRULEPLANE
 bundle des réponses selon external/internal
 
 
-# [PLANE]CONTEXTDEFINITION
+# [PLANE]VIEWOPTIONPLANE
 bundle des réponses selon external/internal
 
 
-# [PLANE]CONTEXTRULE
+# [PLANE]CONTEXTDEFINITIONPLANE
 bundle des réponses selon external/internal
 
 
-# [PLANE]CONTEXTOPTION
+# [PLANE]CONTEXTRULEPLANE
+bundle des réponses selon external/internal
+
+
+# [PLANE]CONTEXTOPTIONPLANE
 bundle des réponses selon external/internal
 
 
