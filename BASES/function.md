@@ -22,3 +22,22 @@ Toute méthode d'objet peut être lié par la relation [DEPENDS_ON] à un ou plu
 # [INHERITANCERELATION]SCOPE_OF
 
 # [METHODTYPE]LOOP | [ SYSTEM ]
+
+# [OBJECT]FUNCTION
+## IDENTITY
+### DEFINITION
+### RULE
+### OPTION
+## VIEW
+### DEFINITION
+### RULE
+### OPTION
+## CONTEXT
+### DEFINITION
+### RULE
+### OPTION
+
+existe pour elle-même mais si elle n'est attachée à aucun objet via une méthode, on doit le faire (cron à exécuter)
+# [OBJECT]METHOD
+depends_on [FUNCTION] 
+a un bu
