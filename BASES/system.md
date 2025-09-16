@@ -78,3 +78,17 @@ toutes les methodes sont réduites au ppcm (factorisation)
 # PLATFORM
 platform est un environnement technique ou logiciel qui sert de base à d’autres usages ou services.
 # TECHNICALLANGUAGE
+
+---
+# HOST
+# SERVER
+# CLOUDSERVER
+# HOSTPROVIDER
+
+
+
+
+# DOCKER
+# PLATFORM
+platform est un environnement technique ou logiciel qui sert de base à d’autres usages ou services.
+# TECHNICALLANGUAGE
