@@ -228,5 +228,15 @@ Tout type d'objet peut potentiellement avoir un alias sous forme **<object.type>
 ### SCHEMA
 Un alias peut avoir exceptionellement des méthodes ou attributs spécifiques définis dans les règles du type d'objet, auquel cas la relation **<object.type>_of** doit préexister dans le catalogue.
 Un alias est forcément associé à un [LAYER] 
+# [OBJECT]PASSIVEOBJECT
+Passif : porte des données et des règles mais n’initie aucune action (ex. type, spec, catalogue d’objets).
+RULES : PRECONDS, POSTCONDS pré à la définition (cohérence, unicité), post = invariants du type.
+# [OBJECT]REACTIVEOBJECT
+Réactif : transforme ou réagit à des entrées/événements pour produire un résultat sans modifier d’état global (idéalement pur)
+RULES : pré (validité des entrées, dépendances résolues), post (conformité du vecteur produit, ordre, unicité, provenance) - IDEMPOTENT
+Récursion bien fondée (réactif) : elle s’appelle elle-même en diminuant un paramètre (ou en progressant vers un cas de base). C’est OK si : cas de base garanti, pas d’effets de bord, et memoization possible.
+# [OBJECT]ACTIVEOBJECT
+ : initie des effets (écritures, changements de statut, envoi réseau, incrément) — c’est la seule catégorie autorisée à avoir des effets de bord.
+ Actif : pré (droit/condition d’agir, lock, version), post (état modifié comme attendu, idempotence opérationnelle si requise
 
 # END
