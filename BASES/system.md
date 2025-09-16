@@ -65,3 +65,16 @@ les vecteurs objets passifs désignent tous une instance de méthode exécutée 
 toutes les methodes sont réduites au ppcm (factorisation)
 
 #
+---
+# HOST
+# SERVER
+# CLOUDSERVER
+# HOSTPROVIDER
+
+
+
+
+# DOCKER
+# PLATFORM
+platform est un environnement technique ou logiciel qui sert de base à d’autres usages ou services.
+# TECHNICALLANGUAGE
