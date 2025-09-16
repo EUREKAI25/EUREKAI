@@ -12,21 +12,7 @@
 ### RULE
 ### OPTION
 
-# OBJECT
-## IDENTITY
-### DEFINITION
-### RULE
-### OPTION
-- options: vector_list_options_self_<uuid>
 
-## VIEW
-### DEFINITION
-### RULE
-### OPTION
-## CONTEXT
-### DEFINITION
-### RULE
-### OPTION
 ------------------------------------------------------------------
 
 
@@ -98,46 +84,8 @@ forcément un des trois actif / passif reactif
 ### RULE
 ### OPTION
 # [ATTRIBUTE]NATURE | [BUNDLE]
-# [TAG]STATUSTAG
-# [STATUSTAG]ACTIVE
-## IDENTITY
-### DEFINITION
-### RULE
-### OPTION
-## VIEW
-### DEFINITION
-### RULE
-### OPTION
-## CONTEXT
-### DEFINITION
-### RULE
-### OPTION
-# [STATUSTAG]PASSIVE
-## IDENTITY
-### DEFINITION
-### RULE
-### OPTION
-## VIEW
-### DEFINITION
-### RULE
-### OPTION
-## CONTEXT
-### DEFINITION
-### RULE
-### OPTION
-# [STATUSTAG]REACTIVE
-## IDENTITY
-### DEFINITION
-### RULE
-### OPTION
-## VIEW
-### DEFINITION
-### RULE
-### OPTION
-## CONTEXT
-### DEFINITION
-### RULE
-### OPTION
+<!-- TAG -->
+
 # [OBJECTATTRIBUTE]REQUIREDATTRIBUTE
 depends_on [SCHEMA] many to one
 # [METHOD]REQUIREDMETHOD
@@ -154,5 +102,9 @@ transversals : format (list/dict)
 # [BUNDLE]RULEBUNDLE
 # [BUNDLE]RELATIONSBUNDLE
 # [BUNDLE]LIFECYCLEBUNDLE
+
+# LABEL
+# META
+# DATA
 
 #
