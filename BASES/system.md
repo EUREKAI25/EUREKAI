@@ -57,4 +57,38 @@ Exemple : L’utilisateur  fictif “Alice” illustrant l’objet Utilisateur.
 ------------------------------------------------------------------
 
 # SCOPE
+
+tout est objet
+les ojets sont définis au format une classe
+pas de classe autre qu'objet
+les vecteurs objets passifs désignent tous une instance de méthode exécutée (<method>.<object>.<bundleparams>)
+toutes les methodes sont réduites au ppcm (factorisation)
+
 #
+---
+# HOST
+# SERVER
+# CLOUDSERVER
+# HOSTPROVIDER
+
+
+
+
+# DOCKER
+# PLATFORM
+platform est un environnement technique ou logiciel qui sert de base à d’autres usages ou services.
+# TECHNICALLANGUAGE
+
+---
+# HOST
+# SERVER
+# CLOUDSERVER
+# HOSTPROVIDER
+
+
+
+
+# DOCKER
+# PLATFORM
+platform est un environnement technique ou logiciel qui sert de base à d’autres usages ou services.
+# TECHNICALLANGUAGE
