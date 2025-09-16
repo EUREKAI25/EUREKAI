@@ -12,21 +12,7 @@
 ### RULE
 ### OPTION
 
-# OBJECT
-## IDENTITY
-### DEFINITION
-### RULE
-### OPTION
-- options: vector_list_options_self_<uuid>
 
-## VIEW
-### DEFINITION
-### RULE
-### OPTION
-## CONTEXT
-### DEFINITION
-### RULE
-### OPTION
 ------------------------------------------------------------------
 
 
@@ -45,24 +31,7 @@ description : objet qui définit les règles de tout le système et porte les me
 ### RULE
 ### OPTION
 # [OBJECT]METAMETACLASS
-# [OBJECT]FUNCTION
-## IDENTITY
-### DEFINITION
-### RULE
-### OPTION
-## VIEW
-### DEFINITION
-### RULE
-### OPTION
-## CONTEXT
-### DEFINITION
-### RULE
-### OPTION
-
-existe pour elle-même mais si elle n'est attachée à aucun objet via une méthode, on doit le faire (cron à exécuter)
-# [OBJECT]METHOD
-depends_on [FUNCTION] 
-a un bundle scope, any par défaut
+ndle scope, any par défaut
 
 # [OBJECT]ATTRIBUTE <!-- les enfants de attributes ont pr caractéristique d'être des tags de -->
 Caractéristique attachée à un élément du DOM (paire nom/valeur) décrivant son identité, son rôle ou son comportement.
@@ -115,45 +84,27 @@ forcément un des trois actif / passif reactif
 ### RULE
 ### OPTION
 # [ATTRIBUTE]NATURE | [BUNDLE]
-# [TAG]STATUSTAG
-# [STATUSTAG]ACTIVE
-## IDENTITY
-### DEFINITION
-### RULE
-### OPTION
-## VIEW
-### DEFINITION
-### RULE
-### OPTION
-## CONTEXT
-### DEFINITION
-### RULE
-### OPTION
-# [STATUSTAG]PASSIVE
-## IDENTITY
-### DEFINITION
-### RULE
-### OPTION
-## VIEW
-### DEFINITION
-### RULE
-### OPTION
-## CONTEXT
-### DEFINITION
-### RULE
-### OPTION
-# [STATUSTAG]REACTIVE
-## IDENTITY
-### DEFINITION
-### RULE
-### OPTION
-## VIEW
-### DEFINITION
-### RULE
-### OPTION
-## CONTEXT
-### DEFINITION
-### RULE
-### OPTION
+<!-- TAG -->
+
+# [OBJECTATTRIBUTE]REQUIREDATTRIBUTE
+depends_on [SCHEMA] many to one
+# [METHOD]REQUIREDMETHOD
+depends_on [SCHEMA] many to one
+# [ATTRIBUTE]OBJECTATTRIBUTE
+is. meta
+# [OBJECTATTRIBUTE][IDENTITYDEFINITIONATTRIBUTE]
+
+# [OBJECTATTRIBUTE]BUNDLE
+bundle is data, 
+transversals : format (list/dict)
+# [BUNDLE]ATTRIBUTEBUNDLE
+# [BUNDLE]METHODBUNDLE
+# [BUNDLE]RULEBUNDLE
+# [BUNDLE]RELATIONSBUNDLE
+# [BUNDLE]LIFECYCLEBUNDLE
+
+# LABEL
+# META
+# DATA
 
 #
