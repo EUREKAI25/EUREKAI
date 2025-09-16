@@ -55,3 +55,19 @@ schema si method : preconditions, postcondition
 # [SCHEMA]SCENARIO
 
 
+
+---
+# FORMAT
+
+# FORMAT
+# [SCHEMA]REGEX
+# SPECIFICATION
+# DESCRIPTION
+# QUESTION
+# NAME
+# IDENT
+# OBJECTDATA
+# VALUE
+# DELAY
+# PERIOD
+# YEAR
