@@ -1,0 +1,138 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>LaNostrAI - Setup</title></head><body>
+<div id='app' style='max-width:900px;margin:40px auto;font-family:system-ui, -apple-system, Segoe UI, Roboto;'>
+
+  <h1>Installation</h1>
+
+  <h2>Admin</h2>
+  <label>Email<br><input id='admin_email' type='email' placeholder='you@example.com' required></label><br><br>
+  <label>Login<br><input id='admin_login' type='text' placeholder='admin' required></label><br><br>
+  <label>Mot de passe<br><input id='admin_password' type='password' placeholder='********' required></label>
+
+  <h2>IA</h2>
+  <div id='ai_current'></div>
+  <button id='ai_add'>Ajouter</button>
+  <ul id='ai_list'></ul>
+
+  <h2>Base de donnees</h2>
+  <div id='db_current'></div>
+  <button id='db_add'>Ajouter</button>
+  <ul id='db_list'></ul>
+
+  <hr style='margin:24px 0'>
+  <button id='submit_install' style='padding:10px 16px;'>Installer</button>
+
+  <p id='msg' style='color:green;'></p>
+</div>
+
+<script>
+async function loadJSON(path){ const r = await fetch(path); return await r.json(); }
+let providers = []; let dbTypes = [];
+let aiItems = []; let dbItems = [];
+
+function ui_ai_current(){
+  const wrap = document.createElement('div');
+  const selProv = document.createElement('select');
+  selProv.id = 'ai_provider';
+  selProv.innerHTML = '<option value="">-- provider --</option>';
+  providers.forEach(p=>{ const o=document.createElement('option'); o.value=p.ident; o.text=p.label; selProv.append(o); });
+  const key = document.createElement('input'); key.type='text'; key.placeholder='API key'; key.size=34; key.id='ai_key'; key.style.marginLeft='8px';
+  wrap.append('Provider: ', selProv, ' Cle: ', key);
+  return wrap;
+}
+
+function render_ai_list(){
+  const ul = document.getElementById('ai_list'); ul.innerHTML='';
+  aiItems.forEach((it, i)=>{
+    const li = document.createElement('li');
+    li.textContent = it.provider + ' (clé masquée)';
+    const del = document.createElement('button'); del.textContent = 'Supprimer'; del.style.marginLeft='8px';
+    del.onclick = ()=>{ aiItems.splice(i,1); render_ai_list(); };
+    li.appendChild(del); ul.appendChild(li);
+  });
+}
+
+function ui_db_current(){
+  const wrap = document.createElement('div');
+  const selType = document.createElement('select'); selType.id = 'db_type';
+  selType.innerHTML = '<option value="">-- type de base --</option>';
+  dbTypes.forEach(t=>{ const o=document.createElement('option'); o.value=t.ident; o.text=t.label; selType.append(o); });
+  const paramsZone = document.createElement('span'); paramsZone.id='db_params'; paramsZone.style.marginLeft='8px';
+  const chkDefault = document.createElement('input'); chkDefault.type='checkbox'; chkDefault.id='db_default'; chkDefault.title='Par defaut'; chkDefault.style.marginLeft='8px';
+  selType.addEventListener('change', ()=>{
+    const t = dbTypes.find(x=>x.ident===selType.value); paramsZone.innerHTML='';
+    if (t) {
+      (t.params_schema||[]).forEach(field=>{
+        const inp=document.createElement('input');
+        inp.type=(field.type==='number'?'number':(field.type==='password'?'password':'text'));
+        inp.placeholder=field.placeholder||field.name; inp.dataset.name=field.name; inp.style.marginLeft='6px';
+        paramsZone.append(inp);
+      });
+    }
+  });
+  wrap.append('Type: ', selType, paramsZone, ' Par defaut ', chkDefault);
+  return wrap;
+}
+
+function render_db_list(){
+  const ul = document.getElementById('db_list'); ul.innerHTML='';
+  dbItems.forEach((it, i)=>{
+    const li = document.createElement('li');
+    const defTxt = it.is_default ? ' [defaut]' : '';
+    li.textContent = it.type + defTxt;
+    const del = document.createElement('button'); del.textContent = 'Supprimer'; del.style.marginLeft='8px';
+    del.onclick = ()=>{ dbItems.splice(i,1); render_db_list(); };
+    li.appendChild(del); ul.appendChild(li);
+  });
+}
+
+async function init(){
+  providers = (await loadJSON('/catalogs/data/ai_providers.json')).providers;
+  dbTypes   = (await loadJSON('/catalogs/data/db_types.json')).types;
+
+  document.getElementById('ai_current').appendChild(ui_ai_current());
+  document.getElementById('db_current').appendChild(ui_db_current());
+
+  document.getElementById('ai_add').onclick = ()=>{
+    const prov = document.getElementById('ai_provider').value;
+    const key  = document.getElementById('ai_key').value.trim();
+    if (!prov || !key) return;
+    aiItems.push({ provider: prov, key: key, active: true });
+    document.getElementById('ai_current').innerHTML=''; document.getElementById('ai_current').appendChild(ui_ai_current());
+    render_ai_list();
+  };
+
+  document.getElementById('db_add').onclick = ()=>{
+    const type = document.getElementById('db_type').value;
+    if (!type) return;
+    const params = {};
+    document.querySelectorAll('#db_params input').forEach(inp=>{ params[inp.dataset.name]=inp.value; });
+    let isDef = document.getElementById('db_default').checked;
+    if (isDef) { dbItems.forEach(x=> x.is_default=false); } // garantir unicite visuelle
+    dbItems.push({ type, params, is_default: isDef, active: true });
+    document.getElementById('db_current').innerHTML=''; document.getElementById('db_current').appendChild(ui_db_current());
+    render_db_list();
+  };
+
+  document.getElementById('submit_install').onclick = async ()=>{
+    const admin = {
+      email: document.getElementById('admin_email').value.trim(),
+      login: document.getElementById('admin_login').value.trim(),
+      password: document.getElementById('admin_password').value
+    };
+
+    // normalisation silencieuse: s'il n'y a aucune BDD par defaut, mettre la premiere
+    if (dbItems.length>0 && !dbItems.some(x=>x.is_default)) { dbItems[0].is_default = true; }
+
+    const r = await fetch('/api/install', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ admin, ai: aiItems, db: dbItems })
+    });
+    const j = await r.json();
+    const msg = document.getElementById('msg'); msg.textContent = j.message || 'OK';
+    if (j.status === 'completed') setTimeout(()=> location.reload(), 600);
+  };
+}
+init();
+</script>
+</body></html>

@@ -1,0 +1,14 @@
+[bootstrap] start
+[bootstrap] catalogs installed
+[bootstrap] hooks registered
+[scenario] install_wizard::GET
+[scenario] install_wizard::EXECUTE
+[scenario] install_wizard::VALIDATE
+[scenario] install_wizard::RENDER
+[hook] hook_after entered (aliases=1)
+[hook] run hook_after_config_install -> render_install_page
+[render] public/index.html updated
+[hook] hook_after exited
+[bootstrap] scenario_install_wizard executed
+[server] http on 8081
+[browser] auto-opened install page
