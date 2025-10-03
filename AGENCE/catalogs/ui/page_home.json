@@ -1,0 +1,13 @@
+{
+  "identity": {
+    "ident": "page_home",
+    "name": "Page d'accueil"
+  },
+  "context": {
+    "relations": {
+      "loads": [
+        "module_login"
+      ]
+    }
+  }
+}

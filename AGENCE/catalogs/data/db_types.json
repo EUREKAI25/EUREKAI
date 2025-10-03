@@ -1,0 +1,78 @@
+{
+  "types": [
+    {
+      "ident": "json",
+      "label": "JSON (fichier)",
+      "params_schema": [
+        {
+          "name": "file_path",
+          "type": "text",
+          "placeholder": "config/data.json"
+        }
+      ]
+    },
+    {
+      "ident": "sqlite",
+      "label": "SQLite",
+      "params_schema": [
+        {
+          "name": "file_path",
+          "type": "text",
+          "placeholder": "config/data.sqlite"
+        }
+      ]
+    },
+    {
+      "ident": "mongodb",
+      "label": "MongoDB",
+      "params_schema": [
+        {
+          "name": "host",
+          "type": "text"
+        },
+        {
+          "name": "port",
+          "type": "number"
+        },
+        {
+          "name": "user",
+          "type": "text"
+        },
+        {
+          "name": "password",
+          "type": "password"
+        },
+        {
+          "name": "db",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "ident": "postgres",
+      "label": "PostgreSQL",
+      "params_schema": [
+        {
+          "name": "host",
+          "type": "text"
+        },
+        {
+          "name": "port",
+          "type": "number"
+        },
+        {
+          "name": "user",
+          "type": "text"
+        },
+        {
+          "name": "password",
+          "type": "password"
+        },
+        {
+          "name": "db",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}

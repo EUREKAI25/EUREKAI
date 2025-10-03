@@ -1,0 +1,13 @@
+{
+  "identity": {
+    "ident": "page_install",
+    "name": "Page d'installation"
+  },
+  "context": {
+    "relations": {
+      "loads": [
+        "module_config"
+      ]
+    }
+  }
+}

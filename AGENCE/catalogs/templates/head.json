@@ -1,0 +1,9 @@
+{
+  "identity": {
+    "ident": "head",
+    "name": "Head"
+  },
+  "definitions": {
+    "value": "<head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>LaNostrAI - Setup</title></head>"
+  }
+}

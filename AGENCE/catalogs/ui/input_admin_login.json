@@ -1,0 +1,11 @@
+{
+  "identity": {
+    "ident": "input_admin_login",
+    "name": "Login admin"
+  },
+  "definitions": {
+    "type": "text",
+    "placeholder": "admin",
+    "required": true
+  }
+}

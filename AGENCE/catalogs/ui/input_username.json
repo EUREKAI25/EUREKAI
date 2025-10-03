@@ -1,0 +1,11 @@
+{
+  "identity": {
+    "ident": "input_username",
+    "name": "Identifiant"
+  },
+  "definitions": {
+    "type": "text",
+    "placeholder": "admin",
+    "required": true
+  }
+}

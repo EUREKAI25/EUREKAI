@@ -1,0 +1,15 @@
+{
+  "identity": {
+    "ident": "form_login",
+    "name": "Formulaire de login"
+  },
+  "context": {
+    "relations": {
+      "elements": [
+        "input_username",
+        "input_password",
+        "btn_submit_login"
+      ]
+    }
+  }
+}

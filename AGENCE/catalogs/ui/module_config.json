@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "ident": "module_config",
+    "name": "Module de configuration"
+  },
+  "definitions": {
+    "value": "FORM_INSTALL"
+  },
+  "context": {
+    "relations": {
+      "contains": [
+        "form_install"
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "identity": {
+    "ident": "body",
+    "name": "Body"
+  },
+  "definitions": {
+    "value": "<body><!-- placeholder:dynamic_content --></body>"
+  }
+}

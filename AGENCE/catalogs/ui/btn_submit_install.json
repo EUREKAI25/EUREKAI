@@ -1,0 +1,11 @@
+{
+  "identity": {
+    "ident": "btn_submit_install",
+    "name": "Bouton installer"
+  },
+  "definitions": {
+    "type": "button",
+    "action": "submit_install",
+    "label": "Installer"
+  }
+}

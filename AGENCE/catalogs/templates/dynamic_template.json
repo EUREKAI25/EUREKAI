@@ -1,0 +1,18 @@
+{
+  "identity": {
+    "ident": "dynamic_template",
+    "name": "Template HTML dynamique"
+  },
+  "definitions": {
+    "value": "<!DOCTYPE html><html lang=\"{lang}\">{head}{body}</html>"
+  },
+  "context": {
+    "relations": {
+      "consumes": [
+        "lang",
+        "head",
+        "body"
+      ]
+    }
+  }
+}

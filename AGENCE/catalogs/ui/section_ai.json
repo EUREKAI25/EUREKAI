@@ -1,0 +1,14 @@
+{
+  "identity": {
+    "ident": "section_ai",
+    "name": "Section IA"
+  },
+  "definitions": {
+    "mode": "adder",
+    "group": [
+      "select_ai_provider",
+      "input_ai_key",
+      "btn_add_ai_provider"
+    ]
+  }
+}

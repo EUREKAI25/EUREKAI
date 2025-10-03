@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "ident": "module_login",
+    "name": "Module de login"
+  },
+  "definitions": {
+    "value": "FORM_LOGIN"
+  },
+  "context": {
+    "relations": {
+      "contains": [
+        "form_login"
+      ]
+    }
+  }
+}

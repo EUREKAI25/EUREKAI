@@ -1,0 +1,20 @@
+{
+  "providers": [
+    {
+      "ident": "openai",
+      "label": "OpenAI"
+    },
+    {
+      "ident": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "ident": "google",
+      "label": "Google"
+    },
+    {
+      "ident": "mistral",
+      "label": "Mistral"
+    }
+  ]
+}

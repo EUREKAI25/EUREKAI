@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "ident": "form_install",
+    "name": "Formulaire d'installation"
+  },
+  "context": {
+    "relations": {
+      "elements": [
+        "section_admin",
+        "section_ai",
+        "section_db",
+        "btn_submit_install"
+      ]
+    }
+  }
+}

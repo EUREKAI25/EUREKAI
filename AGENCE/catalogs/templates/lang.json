@@ -1,0 +1,9 @@
+{
+  "identity": {
+    "ident": "lang",
+    "name": "Langue"
+  },
+  "definitions": {
+    "value": "en"
+  }
+}

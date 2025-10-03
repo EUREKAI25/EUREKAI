@@ -1,0 +1,15 @@
+{
+  "identity": {
+    "ident": "section_admin",
+    "name": "Section Admin"
+  },
+  "context": {
+    "relations": {
+      "elements": [
+        "input_admin_email",
+        "input_admin_login",
+        "input_admin_password"
+      ]
+    }
+  }
+}

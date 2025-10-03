@@ -1,0 +1,15 @@
+{
+  "identity": {
+    "ident": "section_db",
+    "name": "Section BDD"
+  },
+  "definitions": {
+    "mode": "adder",
+    "group": [
+      "select_db_type",
+      "fieldset_db_params",
+      "chk_default_db",
+      "btn_add_db_option"
+    ]
+  }
+}

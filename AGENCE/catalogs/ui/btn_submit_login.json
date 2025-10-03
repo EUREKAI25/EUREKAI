@@ -1,0 +1,11 @@
+{
+  "identity": {
+    "ident": "btn_submit_login",
+    "name": "Bouton login"
+  },
+  "definitions": {
+    "type": "button",
+    "action": "submit_login",
+    "label": "Se connecter"
+  }
+}
