@@ -1,0 +1,187 @@
+# 1. Fondation et principes
+## Charte et vision
+### Définitions
+- Identité : valeurs fondamentales, mission
+- Vue : image projetée, perception voulue
+- Contexte : champ d’application, limites
+### Règles
+- Identité : normes éthiques obligatoires
+- Vue : contraintes de communication
+- Contexte : obligations légales, culturelles
+### Options
+- Identité : déclinaisons possibles de la mission
+- Vue : variantes de ton, styles de communication
+- Contexte : scénarios d’adaptation aux environnements
+## Nomenclature et conventions
+### Définitions
+- Identité : formats de base, terminologie
+- Vue : représentations standardisées (markdown, json)
+- Contexte : domaines d’usage (technique, organisationnel)
+### Règles
+- Identité : cohérence des noms et alias
+- Vue : conventions graphiques et syntaxiques
+- Contexte : contraintes de compatibilité entre couches
+### Options
+- Identité : alternatives de nommage
+- Vue : options de présentation ou de rendu
+- Contexte : variations selon public cible ou outil utilisé
+
+## Gouvernance et éthique
+### Définitions
+- Identité : rôles de gouvernance
+- Vue : vision publique de l’éthique
+- Contexte : environnement de responsabilité
+### Règles
+- Identité : séparation des responsabilités
+- Vue : transparence obligatoire
+- Contexte : conformité réglementaire
+### Options
+- Identité : formes possibles de gouvernance
+- Vue : niveaux de transparence
+- Contexte : tolérances selon juridictions
+
+# 2. Architecture technique
+
+## Objets et fractale
+### Définitions
+- Identité : nature des objets, méta-objets
+- Vue : représentation fractale des objets
+- Contexte : environnement technique lié à l’objet
+### Règles
+- Identité : unicité, persistance des objets
+- Vue : cohérence des fractales
+- Contexte : héritage et contraintes de structure
+### Options
+- Identité : extensions possibles d’objets
+- Vue : vues alternatives ou dérivées
+- Contexte : adaptation selon contexte d’exécution
+
+## Scénarios et catalogues
+### Définitions
+- Identité : structure canonique des scénarios et catalogues
+- Vue : modes de représentation (steps, entrées)
+- Contexte : types d’usage (exécution, audit, stockage)
+### Règles
+- Identité : unicité des scénarios et catalogues
+- Vue : validation fractale obligatoire
+- Contexte : cohérence d’orchestration
+### Options
+- Identité : typologies supplémentaires
+- Vue : vues partielles, agrégées
+- Contexte : usages dérivés (test, simulation)
+
+## Relations et métaclasses
+### Définitions
+- Identité : types de relations et métaclasses
+- Vue : schémas des relations
+- Contexte : domaine d’application des relations
+### Règles
+- Identité : cardinalité, intégrité
+- Vue : homogénéité des schémas
+- Contexte : compatibilité entre niveaux de métaclasses
+### Options
+- Identité : nouvelles formes de relations
+- Vue : affichages simplifiés ou complexes
+- Contexte : relations contextuelles
+
+## APIs et intégrations
+### Définitions
+- Identité : API internes, externes
+- Vue : documentation, schéma standardisé
+- Contexte : périmètre et protocoles supportés
+### Règles
+- Identité : standardisation des points d’entrée
+- Vue : validation des formats
+- Contexte : compatibilité ascendante et sécurité
+### Options
+- Identité : APIs spécialisées
+- Vue : variantes de documentation ou endpoints
+- Contexte : intégrations facultatives ou expérimentales
+
+# 3. Agents et intelligence
+
+## Typologie des agents
+### Définitions
+- Identité : exécuteurs, créateurs, stratèges, décideurs, externes
+- Vue : représentation de leur rôle dans le système
+- Contexte : champs d’intervention et missions types
+### Règles
+- Identité : unicité des rôles et niveaux de permissions
+- Vue : cohérence d’apparence et de comportement
+- Contexte : respect des limites de domaine
+### Options
+- Identité : agents hybrides ou polyvalents
+- Vue : vues spécialisées (par équipe, par mission)
+- Contexte : contextes d’adaptation (fallback, simulation)
+
+## Prompts et IA
+### Définitions
+- Identité : métaprompt, héritage et personnalisation
+- Vue : structure canonique des prompts
+- Contexte : lien entre mission, rôle et contexte d’exécution
+### Règles
+- Identité : standardisation et unicité des prompts
+- Vue : respect du schéma fractal des vecteurs
+- Contexte : conformité aux scénarios et catalogues
+### Options
+- Identité : déclinaisons de prompts
+- Vue : variantes de rendu et d’adaptation
+- Contexte : extensions contextuelles (langue, domaine)
+
+## Modèles et entraînement
+### Définitions
+- Identité : types de modèles utilisés (LLM, multimodal, etc.)
+- Vue : représentation des capacités d’un modèle
+- Contexte : périmètres applicatifs des modèles
+### Règles
+- Identité : gestion des versions et cohérence des modèles
+- Vue : validation de la qualité de sortie
+- Contexte : contraintes éthiques et légales d’usage
+### Options
+- Identité : choix de modèles alternatifs
+- Vue : réglages de précision ou de style
+- Contexte : ajustement aux environnements ou missions
+
+# 4. Organisation et orchestration
+
+## Layers et coordination
+### Définitions
+- Identité : structuration en couches hiérarchiques
+- Vue : schéma des couches et interactions
+- Contexte : domaines de responsabilité par layer
+### Règles
+- Identité : séparation stricte des rôles par couche
+- Vue : cohérence des représentations inter-layer
+- Contexte : conformité des interactions transversales
+### Options
+- Identité : layers spécialisés ou temporaires
+- Vue : vues comparatives ou agrégées
+- Contexte : variations selon contexte stratégique
+
+## Orchestration des scénarios
+### Définitions
+- Identité : nature fractale et récursive des scénarios
+- Vue : schéma d’orchestration et de boucles
+- Contexte : périmètre d’application (simple ou complexe)
+### Règles
+- Identité : unicité et cohérence des scénarios
+- Vue : steps obligatoires (get, execute, validate, render)
+- Contexte : conformité aux vecteurs et catalogues
+### Options
+- Identité : scénarios composites ou hybrides
+- Vue : modes de visualisation simplifiée
+- Contexte : contextes expérimentaux ou simulés
+
+## Hébergement et déploiement
+### Définitions
+- Identité : unités d’hébergement (cube serveur, docker)
+- Vue : représentation de l’infrastructure
+- Contexte : périmètre d’isolation (client, agence, labo)
+### Règles
+- Identité : cloisonnement et sécurité des cubes
+- Vue : normalisation des environnements déployés
+- Contexte : conformité cloud et légale
+### Options
+- Identité : cloud alternatifs ou hybrides
+- Vue : visualisations des ressources et métriques
+- Contexte : scénarios de montée en charge ou migration
