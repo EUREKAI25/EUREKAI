@@ -1,0 +1,8 @@
+.env
+AGENCE/config/system_config.json
+config/system_config.json
+AGENCE/envtxt.txt
+data/
+projects/
+**/__pycache__/
+*.pyc
