@@ -1,0 +1,41 @@
+{
+  "types": [
+    {
+      "ident": "sqlite",
+      "label": "SQLite",
+      "params_schema": [
+        {
+          "name": "description",
+          "type": "text",
+          "placeholder": "Base principale"
+        }
+      ]
+    },
+    {
+      "ident": "mongodb",
+      "label": "MongoDB",
+      "params_schema": [
+        {
+          "name": "host",
+          "type": "text",
+          "placeholder": "localhost"
+        },
+        {
+          "name": "port",
+          "type": "number",
+          "placeholder": "27017"
+        },
+        {
+          "name": "user",
+          "type": "text",
+          "placeholder": "root"
+        },
+        {
+          "name": "password",
+          "type": "password",
+          "placeholder": "password"
+        }
+      ]
+    }
+  ]
+}

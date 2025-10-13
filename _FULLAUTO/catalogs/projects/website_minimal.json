@@ -1,0 +1,14 @@
+{
+  "project": {
+    "type": "website",
+    "name": "Nouveau Site",
+    "description": "Site vitrine"
+  },
+  "structure": {
+    "pages": [
+      "home",
+      "about",
+      "contact"
+    ]
+  }
+}
