@@ -1,3 +1,1 @@
-# Eurekai
-Type: interne
-Client: Agence
+# Eurekai\nType: interne\nClient: Agence\n
